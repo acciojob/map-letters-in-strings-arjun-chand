@@ -1,17 +1,15 @@
-//your JS code here. If required.
-function mapLetters(str){
-    let obj = {};
-    for (let i = 0; i < str.length; i++) {
-        const element = str[i];
-        if(obj[element] === undefined){
-            obj[element] = [i];
-        }
-        else{
-            obj[element].push(i);
-        }
+function mapLetters(str) {
+  let obj = {};
+  for (let i = 0; i < str.length; i++) {
+    if (!obj[str[i]]) {
+      obj[str[i]] = [i];
+    } else {
+      obj[str[i]].push(i);
     }
-    return(obj);
+  }
+  return obj;
 }
 
-const str = prompt("Enter str :")
-alert(JSON.strigify(mapLetters(str)));
+// Do not change the code below
+const str = prompt("Enter str: ");
+alert(JSON.stringify(mapLetters(str)));
