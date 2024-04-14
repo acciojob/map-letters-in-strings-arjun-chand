@@ -13,8 +13,5 @@ function mapLetters(str){
     return(obj);
 }
 
-//const str = prompt("Enter str :")
+const str = prompt("Enter str :")
 alert(JSON.strigify(mapLetters(str)));
-
-
-alert JSON.stringify(mapLetter(str));
